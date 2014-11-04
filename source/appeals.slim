@@ -1,0 +1,224 @@
+---
+Title: Обращения
+---
+
+div class="container"
+	div class="row"
+		div class="col-sm-2 text-right"
+			ul class="list-unstyled menu-list"
+				li
+					h3 Меню:
+				li
+					a href="" Техническая поддержка
+		div class="col-sm-10"
+			h3 Список обращений:
+			table class="table-one table-style footable"
+				thead
+					tr
+						th data-sort-ignore="true"
+							ul class="list-inline"
+								li
+									button type="button" class="icon icon-search"
+									| Поиск
+								li class="open-optional"
+									button type="button" class="icon icon-down"
+									button type="button" class="icon icon-up"
+								li
+									form
+										div class="dropdown"
+											button class="icon icon-list" type="button" data-toggle="dropdown"
+												span class="icon-down"
+											ul class="dropdown-menu" role="menu"
+												li class="dropdown-submenu"
+													a href="" data-toggle="dropdown"
+														| Уcловия поиска
+													ul class="dropdown-menu"
+														li
+															label
+																input type="checkbox" checked="true" ID обращения
+														li
+															label
+																input type="checkbox" checked="true" Индикатор
+														li
+															label
+																input type="checkbox" checked="true" Закрыто / Открыто
+														li
+															label
+																input type="checkbox" checked="true" Заголовок / Текст сообщения
+														li class="divider"
+														li
+															a href="" Показать все условия
+														li
+															a href="" Скрыть все условия
+												li class="divider"
+												li
+													a href="" Сохраненные фильтры...
+												li
+													a href="" Сохранить как...
+						th class="text-right" data-hide="phone" data-sort-ignore="true"
+							button class="icon icon-open"
+				tbody
+					tr
+						td
+							form class="form-inline"
+								div class="search-item"
+									p class="pull-left" ID обращения:
+									div class="form-group"
+										input type="text" class="form-control"
+									div class="optional hidden"
+										div class="search-item"
+											p class="pull-left" Индикатор:
+											div class="form-group"
+												select class="form-control"
+													option нет
+													option зеленый
+													option красный
+													option серый
+										div class="search-item"
+											p class="pull-left" Закрыто / Открыто:
+											div class="form-group"
+												select class="form-control"
+													option все
+										div class="search-item"
+											p class="pull-left" Заголовок / Текст сообщения:
+											div class="form-group"
+												textarea class="form-control" rows="1"
+									br class="visible-xs visible-sm"
+									br class="visible-sm visible-md"
+									br class="visible-md"
+									button class="btn btn-blue" type="submit" Найти
+									button class="btn btn-blue" type="reset" Отменить
+						td class="text-center"
+							button class="btn btn-blue" Cоздать новое обращение
+			table class="table-two table-style footable" cellspacing="0"
+				thead
+					tr
+						th class="text-center" data-sort-ignore="true"
+							form
+								div class="dropdown text-left"
+									button class="icon icon-list" type="button" data-toggle="dropdown"
+										span class="icon-down"
+									ul class="dropdown-menu" role="menu"
+										li
+											a href="" Настроить список...
+										li class="dropdown-submenu"
+											a href="" data-toggle="dropdown"
+												| Кнопки списка
+											ul class="dropdown-menu"
+												li
+													label
+														input type="checkbox" checked="true" Индикатор
+												li
+													label
+														input type="checkbox" checked="true" ID
+												li
+													label
+														input type="checkbox" checked="true" Заголовок
+												li
+													label
+														input type="checkbox" checked="true" Изменено
+												li
+													label
+														input type="checkbox" checked="true" Кто изменил
+												li
+													label
+														input type="checkbox" checked="true" Сообщение
+												li
+													label
+														input type="checkbox" checked="true" Статус
+												li class="divider"
+												li
+													a href="" Применить
+										li
+											label
+												input type="checkbox" < Представление по умолчанию >
+										li class="divider"
+										li
+											a href="" Представления...
+										li class="dropdown-submenu"
+											a href="" data-toggle="dropdown"
+												| Цветовая схема...
+											ul class="dropdown-menu"
+												li
+													label
+														input type="checkbox" Схема 1
+												li
+													label
+														input type="checkbox" Схема 2
+												li
+													label
+														input type="checkbox" Схема 3
+						th data-hide="phone, tablet"
+							| индикатор
+						th data-hide="phone" ID
+						th data-sort-ignore="true" заголовок
+						th data-hide="phone" изменено
+						th data-hide="phone, tablet" data-sort-ignore="true" кто изменил
+						th data-hide="phone" data-sort-ignore="true" сооб.
+						th data-hide="phone, tablet" data-sort-ignore="true" статус
+				tbody
+					/ tr
+					/ 	td colspan="8" class="empty"
+					tr
+						td class="text-center"
+							div class="dropdown"
+								button class="icon icon-list" type="button" data-toggle="dropdown"
+									span class="icon-down"
+								ul class="dropdown-menu" role="menu"
+									li Изменить
+						td
+							div class="green-s green indicator"
+						td 1
+						td Проблема с прайсом
+						td
+							| 21.04.2014
+							br
+							| 17:10:59
+						td murderer
+						td 43
+						td
+					/ tr
+					/ 	td colspan="8" class="empty"
+					tr
+						td class="text-center"
+							div class="dropdown"
+								button class="icon icon-list" type="button" data-toggle="dropdown"
+									span class="icon-down"
+								ul class="dropdown-menu" role="menu"
+									li Изменить
+						td
+							div class="gray indicator"
+						td 2
+						td Банки, но не финансовые
+						td
+							| 21.03.2014
+							br
+							| 17:10:59
+						td murderer
+						td 43
+						td
+					/ tr
+					/ 	td colspan="8" class="empty"
+				tfoot
+					tr
+						td colspan="8"
+							p class="all pull-left" всего:&nbsp;2
+							p class="pages" страницы:&nbsp;2
+
+			ul class="list-unstyled indicator-list"
+				li
+					span class="indicator red"
+					| - последний раз в обращение писал клиент техподдержки (вы ответственный)
+				li
+					span class="indicator yellow"
+					| - последний раз в обращение писал клиент техподдержки (вы не ответственный)
+				li
+					span class="indicator green"
+					| - последний раз в обращение писали вы
+				li
+					span class="indicator green green-s"
+					| - последний раз в обращение писал сотрудник техподдержки
+				li
+					span class="indicator gray"
+					| - обращение закрыто
+

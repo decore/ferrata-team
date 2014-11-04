@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Days';
+    src: url('fonts/days/days.eot');
+    src: url('fonts/days/days.eot?#iefix') format('embedded-opentype'),
+         url('fonts/days/days.woff') format('woff'),
+         url('fonts/days/days.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,391 @@
+@import "compass"
+@import "fonts/fontawesome403/_awesome403"
+@import "fonts/days/days"
+@import "fonts/exo-two/exo-two"
+@import "fonts/ferrata-icons/ferrata-icons"
+@import "sticky-footer"
+
+.parallax
+	@media (max-width: 767px), (max-height: 699px)
+		display: none
+	width: 100%
+	list-style: none
+	padding: 0
+	li
+		width: 100%
+	img
+		margin: 0 auto
+		display: block
+		width: 100%
+		max-height: calc( 100vh - 150px )
+
+h1, h2, h3, h4, h5, h6, p
+	margin: 0
+a
+	color: #134663 !important
+	text-decoration: underline
+.dropdown
+	a
+		text-decoration: none
+		&:hover
+			background: #d3e0e2
+	label
+		color: #134663 !important
+	input[type="checkbox"]
+		vertical-align: top
+		margin-right: 5px
+	.dropdown-menu > li > a
+		padding: 3px 30px
+.days
+	font-family: 'Days'
+.btn-blue
+	background: #134663
+	color: #fff
+	font-family: 'Days'
+	&:focus, &:hover
+		color: #999
+.btn-light
+	background-color: #d3e0e2
+	border: 1px solid #6e8286
+.icon
+	background: none
+	border: none
+	+box-shadow(0)
+	&:focus
+		outline: none
+.icon-down, .icon-up
+	color: #99cccc
+	margin-left: 5px
+.table-style
+	@media (min-width: 992px)
+		border-collapse: separate
+	width: 100%
+	thead
+		background: #d3e0e2
+		th
+			font-weight: normal
+			&:first-child
+				+border-radius(4px 0 0 0)
+			&:last-child
+				+border-radius(0 4px 0 0)
+	tbody
+		background: #f9f9f9
+	tfoot
+		background: #e6eeef
+	tr+tr
+		td
+			@media (min-width: 992px)
+				border-top: none !important
+	td, th
+		border: 1px solid #6e8286
+		padding: 10px
+		&:not(:last-child)
+			@media (min-width: 992px)
+				border-right: none 
+	tfoot
+		tr
+			td
+				+border-radius(0 0 4px 4px)
+
+.indicator
+	height: 23px
+	width: 23px
+	+border-radius(50%)
+	&.green
+		background-color: #00a651
+	&.green-s:before
+		content: 'S'
+		color: #fff
+		font-size: 17px
+		position: relative
+		top: -2px
+		left: 7px
+	&.red
+		background-color: red
+	&.yellow
+		background-color: yellow
+	&.gray
+		background-color: #999
+
+body
+	position: relative
+	color: #134663
+	font-family: 'exo-two-regular'
+	background: #eff5f5 /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VmZjVmNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZWJmMWYxIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTUlIiBzdG9wLWNvbG9yPSIjZWVmNGY0IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNzclIiBzdG9wLWNvbG9yPSIjZWRmM2YzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODUlIiBzdG9wLWNvbG9yPSIjZWNmMmYwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODUlIiBzdG9wLWNvbG9yPSIjZTllZmVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODUlIiBzdG9wLWNvbG9yPSIjZWJlZmYwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODglIiBzdG9wLWNvbG9yPSIjZWFlZWVkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VhZWNlYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=)
+	background: -moz-linear-gradient(top, #eff5f5 0%, #ebf1f1 0%, #eef4f4 15%, #edf3f3 77%, #ecf2f0 85%, #e9efed 85%, #ebeff0 85%, #eaeeed 88%, #eaeceb 100%) /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eff5f5), color-stop(0%,#ebf1f1), color-stop(15%,#eef4f4), color-stop(77%,#edf3f3), color-stop(85%,#ecf2f0), color-stop(85%,#e9efed), color-stop(85%,#ebeff0), color-stop(88%,#eaeeed), color-stop(100%,#eaeceb)) /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #eff5f5 0%,#ebf1f1 0%,#eef4f4 15%,#edf3f3 77%,#ecf2f0 85%,#e9efed 85%,#ebeff0 85%,#eaeeed 88%,#eaeceb 100%) /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #eff5f5 0%,#ebf1f1 0%,#eef4f4 15%,#edf3f3 77%,#ecf2f0 85%,#e9efed 85%,#ebeff0 85%,#eaeeed 88%,#eaeceb 100%) /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #eff5f5 0%,#ebf1f1 0%,#eef4f4 15%,#edf3f3 77%,#ecf2f0 85%,#e9efed 85%,#ebeff0 85%,#eaeeed 88%,#eaeceb 100%) /* IE10+ */
+	background: linear-gradient(to bottom, #eff5f5 0%,#ebf1f1 0%,#eef4f4 15%,#edf3f3 77%,#ecf2f0 85%,#e9efed 85%,#ebeff0 85%,#eaeeed 88%,#eaeceb 100%) /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5f5', endColorstr='#eaeceb',GradientType=0 ) /* IE6-8 */
+	.hr-wide
+		border-top: 4px solid #c8ced2
+		margin-bottom: 50px
+		@media (max-width: 767px)
+			margin: 20px 0
+
+.header
+	padding-top: 30px
+	img
+		display: inline-block
+		width: 70px
+		margin-right: 10px
+		vertical-align: top
+	.header-logo
+		display: inline-block
+	.hr-wide
+		border-color: #134663
+.logo
+	img
+		margin-bottom: 50px
+	p
+		margin-bottom: 30px
+		font-size: 14px
+	form
+		input
+			background: #134663
+			color: #fff
+			margin-right: 3px
+			width: 108px !important
+			&::-webkit-input-placeholder,
+				color: #fff
+				text-align: center
+			&::-moz-input-placeholder
+				color: #fff
+				text-align: center
+
+.main
+	.header
+		display: none
+	.logo
+		margin-top: 25%
+		@media (max-height: 699px)
+			margin-top: 10%
+		@media (min-width: 768px) and (min-height: 700px)
+			top: 25%
+			position: absolute
+			width: 100%
+			margin-top: 0
+		form
+			.form-control
+				display: inline-block
+			.btn
+				vertical-align: top
+	.footer
+		.hr-wide
+			margin-top: 20px
+			@media (min-width: 768px)
+				margin-top: 0
+
+.appeals
+	ul.menu-list
+		margin-bottom: 30px
+		li
+			@media (max-width: 500px)
+				text-align: left
+	ul.indicator-list
+		li
+			margin-bottom: 10px
+			span.indicator
+				display: inline-block
+				vertical-align: middle
+				margin-right: 5px
+			span.indicator-text
+				margin-left: 30px
+	h3
+		margin-bottom: 50px
+		@media (max-width: 500px)
+			margin-bottom: 10px
+	.table-one
+		margin-bottom: 40px
+		.dropdown-menu
+			@media (max-width: 480px)
+				left: -165px
+				.dropdown-submenu
+					position: static
+					.dropdown-menu
+						left: 33px
+						top: 100%
+		thead
+			td
+				background: #d3e0e2
+		th
+			.icon
+				margin-top: 4px
+			.list-inline
+				margin-bottom: 0
+		td
+			form
+				p
+					margin-top: 7px
+					display: inline-block
+					width: 200px
+					@media (max-width: 767px)
+						margin-bottom: 10px
+				.search-item
+					@media (min-width: 768px)
+						margin-top: 20px
+					&:last-child
+						margin-bottom: 20px
+				.form-group
+					margin: 0 20px
+					width: 180px
+					margin-left: 0
+					.form-control
+						width: 100%
+				button+button
+					margin-left: 15px
+			.dropdown
+				.icon-down
+					margin-left: 5px
+				.dropdown-menu
+					background: #f9f9f9
+					li
+						a
+							input
+								margin-right: 5px
+			&:last-child
+				button
+					@media (max-width: 767px)
+						margin-left: -7px
+	.table-two
+		margin-bottom: 40px
+		@media (max-width: 480px)
+			.dropdown-submenu
+				position: static
+				.dropdown-menu
+					left: 50px
+					top: 100%
+		.dropdown > .dropdown-menu > li > label
+			input[type="checkbox"]
+				margin-left: -10px
+		th:nth-child(1)
+			width: 50px !important
+		th:nth-child(4)
+			width: 250px
+			@media (max-width: 1199px)
+				width: 170px
+		th
+			position: relative
+		tfoot
+			.all
+				margin-right: 20px
+	.footer
+		p
+			display: none
+
+.appeal-details
+	ul.menu-list
+		margin-bottom: 30px
+		li
+			@media (max-width: 767px)
+				text-align: left
+	h3
+		margin-bottom: 50px
+		@media (max-width: 767px)
+			margin-bottom: 10px
+	dl
+		dt
+			font-weight: normal
+	.div-th
+		padding: 10px
+		font-weight: normal
+		&:not(:last-child)
+			border-right: 1px solid #333
+		@media (max-width: 991px)
+			text-align: left !important
+	.dl-inline
+		margin-bottom: 0
+		dt
+			display: inline-block
+			margin-right: 5px
+		dd
+			display: inline-block
+	table
+		margin-bottom: 15px
+		thead
+			th
+				padding: 0
+		tbody
+			td
+				padding: 15px 10px
+	.table-style
+		thead
+			th
+				+border-radius(4px 4px 0 0)
+	.appeal-info
+		.dl-horizontal
+			margin-bottom: 5px
+			dt, dd
+				text-align: left
+			@media (max-width: 767px)
+				dt, dd
+					display: inline-block
+				dt
+					margin-right: 10px
+	.appeal-info, .answer
+		thead
+			th
+				padding: 10px
+	.answer
+		.btn-light
+			margin-right: 15px
+		.write-message
+			h5
+				margin-bottom: 20px
+			// btn style for wysihtml5
+			.btn-default
+				border: 1px solid #6e8286
+				text-decoration: none
+				&[data-wysihtml5-command="underline"]
+					text-decoration: underline
+				&:hover
+					background-color: #d3e0e2
+		.add-file
+			margin-bottom: 20px
+			// style for btn from bootstrapFileInput
+			a.file-input-wrapper
+				background-color: #fff
+				border: 1px solid #6e8286
+				text-decoration: none
+				margin-right: 20px
+				&:hover
+					background-color: #d3e0e2
+		.selecting
+			label
+				margin-right: 10px
+				font-weight: normal
+				vertical-align: middle
+				@media (max-width: 991px)
+					min-width: 168px
+			select.form-control
+				display: inline-block
+				max-width: 170px
+				min-width: 135px
+			.dl-inline
+				margin-top: 6px
+				dt
+					vertical-align: top
+				.icon
+					color: #ccc
+					font-size: 18px
+	.buttons-group
+		margin-top: 30px
+		button
+			margin-right: 10px
+			@media (max-width: 320px)
+				width: 100%
+				margin-bottom: 10px
+	.footer
+		p
+			display: none
+
+.footer
+	margin-bottom: 50px
+	@media (max-width: 767px)
+		margin-bottom: 20px
+	.hr-wide
+		margin-top: 100px
