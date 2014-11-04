@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0" name="viewport" />
+    <title>Project_Name | </title>
+    <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/normalize.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/dropdown-enhancement.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="js/vendor/footable/css/footable.core.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="js/vendor/bootstrap3-wysihtml5/src/bootstrap3-wysihtml5.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/project.css" media="screen" rel="stylesheet" type="text/css" /><script src="js/html5shiv.js" type="text/javascript"></script><!--[if lt IE 9]><script src="js/html5shiv.js" type="text/javascript"></script><script src="js/respond.min.js"></script><![endif]-->
+  </head>
+  <body class="appeals">
+    <header class="header text-center">
+      <img src="img/logo.png" />
+      <div class="header-logo text-left">
+        <h1 class="days">
+          Ferrata Team
+        </h1>
+        <p>
+          Качество. Надежность. Разумный подход
+        </p>
+      </div>
+      <hr class="hr-wide" />
+    </header>
+    <main role="main"><div class="container">
+  <div class="row">
+    <div class="col-sm-2 text-right">
+      <ul class="list-unstyled menu-list">
+        <li>
+          <h3>
+            Меню:
+          </h3>
+        </li>
+        <li>
+          <a href="">Техническая поддержка</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-10">
+      <h3>
+        Список обращений:
+      </h3>
+      <table class="table-one table-style footable">
+        <thead>
+          <tr>
+            <th data-sort-ignore="true">
+              <ul class="list-inline">
+                <li>
+                  <button class="icon icon-search" type="button"></button>Поиск
+                </li>
+                <li class="open-optional">
+                  <button class="icon icon-down" type="button"></button><button class="icon icon-up" type="button"></button>
+                </li>
+                <li>
+                  <form>
+                    <div class="dropdown">
+                      <button class="icon icon-list" data-toggle="dropdown" type="button"><span class="icon-down"></span></button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-submenu">
+                          <a data-toggle="dropdown" href="">Уcловия поиска</a>
+                          <ul class="dropdown-menu">
+                            <li>
+                              <label><input checked="true" type="checkbox">ID обращения</input></label>
+                            </li>
+                            <li>
+                              <label><input checked="true" type="checkbox">Индикатор</input></label>
+                            </li>
+                            <li>
+                              <label><input checked="true" type="checkbox">Закрыто / Открыто</input></label>
+                            </li>
+                            <li>
+                              <label><input checked="true" type="checkbox">Заголовок / Текст сообщения</input></label>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                              <a href="">Показать все условия</a>
+                            </li>
+                            <li>
+                              <a href="">Скрыть все условия</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a href="">Сохраненные фильтры...</a>
+                        </li>
+                        <li>
+                          <a href="">Сохранить как...</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </form>
+                </li>
+              </ul>
+            </th>
+            <th class="text-right" data-hide="phone" data-sort-ignore="true">
+              <button class="icon icon-open"></button>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <form class="form-inline">
+                <div class="search-item">
+                  <p class="pull-left">
+                    ID обращения:
+                  </p>
+                  <div class="form-group">
+                    <input class="form-control" type="text" />
+                  </div>
+                  <div class="optional hidden">
+                    <div class="search-item">
+                      <p class="pull-left">
+                        Индикатор:
+                      </p>
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>
+                            нет
+                          </option>
+                          <option>
+                            зеленый
+                          </option>
+                          <option>
+                            красный
+                          </option>
+                          <option>
+                            серый
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="search-item">
+                      <p class="pull-left">
+                        Закрыто / Открыто:
+                      </p>
+                      <div class="form-group">
+                        <select class="form-control">
+                          <option>
+                            все
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="search-item">
+                      <p class="pull-left">
+                        Заголовок / Текст сообщения:
+                      </p>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="1"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <br class="visible-xs visible-sm" /><br class="visible-sm visible-md" /><br class="visible-md" /><button class="btn btn-blue" type="submit">Найти</button><button class="btn btn-blue" type="reset">Отменить</button>
+                </div>
+              </form>
+            </td>
+            <td class="text-center">
+              <button class="btn btn-blue">Cоздать новое обращение</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table cellspacing="0" class="table-two table-style footable">
+        <thead>
+          <tr>
+            <th class="text-center" data-sort-ignore="true">
+              <form>
+                <div class="dropdown text-left">
+                  <button class="icon icon-list" data-toggle="dropdown" type="button"><span class="icon-down"></span></button>
+                  <ul class="dropdown-menu" role="menu">
+                    <li>
+                      <a href="">Настроить список...</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a data-toggle="dropdown" href="">Кнопки списка</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <label><input checked="true" type="checkbox">Индикатор</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">ID</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">Заголовок</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">Изменено</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">Кто изменил</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">Сообщение</input></label>
+                        </li>
+                        <li>
+                          <label><input checked="true" type="checkbox">Статус</input></label>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                          <a href="">Применить</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <label><input type="checkbox">< Представление по умолчанию ></input></label>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                      <a href="">Представления...</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a data-toggle="dropdown" href="">Цветовая схема...</a>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <label><input type="checkbox">Схема 1</input></label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox">Схема 2</input></label>
+                        </li>
+                        <li>
+                          <label><input type="checkbox">Схема 3</input></label>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </form>
+            </th>
+            <th data-hide="phone, tablet">
+              индикатор
+            </th>
+            <th data-hide="phone">
+              ID
+            </th>
+            <th data-sort-ignore="true">
+              заголовок
+            </th>
+            <th data-hide="phone">
+              изменено
+            </th>
+            <th data-hide="phone, tablet" data-sort-ignore="true">
+              кто изменил
+            </th>
+            <th data-hide="phone" data-sort-ignore="true">
+              сооб.
+            </th>
+            <th data-hide="phone, tablet" data-sort-ignore="true">
+              статус
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center">
+              <div class="dropdown">
+                <button class="icon icon-list" data-toggle="dropdown" type="button"><span class="icon-down"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    Изменить
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="green-s green indicator"></div>
+            </td>
+            <td>
+              1
+            </td>
+            <td>
+              Проблема с прайсом
+            </td>
+            <td>
+              21.04.2014<br />17:10:59
+            </td>
+            <td>
+              murderer
+            </td>
+            <td>
+              43
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="text-center">
+              <div class="dropdown">
+                <button class="icon icon-list" data-toggle="dropdown" type="button"><span class="icon-down"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                  <li>
+                    Изменить
+                  </li>
+                </ul>
+              </div>
+            </td>
+            <td>
+              <div class="gray indicator"></div>
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              Банки, но не финансовые
+            </td>
+            <td>
+              21.03.2014<br />17:10:59
+            </td>
+            <td>
+              murderer
+            </td>
+            <td>
+              43
+            </td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="8">
+              <p class="all pull-left">
+                всего:&nbsp;2
+              </p>
+              <p class="pages">
+                страницы:&nbsp;2
+              </p>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+      <ul class="list-unstyled indicator-list">
+        <li>
+          <span class="indicator red"></span>- последний раз в обращение писал клиент техподдержки (вы ответственный)
+        </li>
+        <li>
+          <span class="indicator yellow"></span>- последний раз в обращение писал клиент техподдержки (вы не ответственный)
+        </li>
+        <li>
+          <span class="indicator green"></span>- последний раз в обращение писали вы
+        </li>
+        <li>
+          <span class="indicator green green-s"></span>- последний раз в обращение писал сотрудник техподдержки
+        </li>
+        <li>
+          <span class="indicator gray"></span>- обращение закрыто
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></main>
+    <footer class="footer text-center">
+      <hr class="hr-wide" />
+      <p>
+        &copy; Инфопортал 2014. Все права зарегистрированы.<br />Работает на "1С - Битрикс: Управление сайтом"
+      </p>
+    </footer>
+    <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/dropdown-enchancement.js" type="text/javascript"></script>
+    <script src="js/vendor/footable/js/footable.js" type="text/javascript"></script>
+    <script src="js/vendor/footable/js/footable.filter.js" type="text/javascript"></script>
+    <script src="js/vendor/footable/js/footable.sort.js" type="text/javascript"></script>
+    <script src="js/vendor/parallax/deploy/jquery.parallax.min.js" type="text/javascript"></script>
+    <script src="js/vendor/wysihtml5/dist/wysihtml5-0.3.0.js" type="text/javascript"></script>
+    <script src="js/vendor/handlebars/handlebars.runtime-v1.3.0.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap3-wysihtml5/src/generated/templates.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap3-wysihtml5/src/bootstrap3-wysihtml5.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap3-wysihtml5/src/locales/bootstrap-wysihtml5.en-US.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap3-wysihtml5/src/locales/bootstrap-wysihtml5.ru-RU.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap3-wysihtml5/src/generated/commands.js" type="text/javascript"></script>
+    <script src="js/vendor/bootstrap.file-input.js" type="text/javascript"></script>
+    <script src="js/all.js" type="text/javascript"></script>
+  </body>
+</html>
